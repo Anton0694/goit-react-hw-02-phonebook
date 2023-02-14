@@ -1,4 +1,5 @@
-import {Input} from './Filter.styled'
+import { Input } from './Filter.styled'
+import PropTypes from 'prop-types';
 
 export function Filter({ onFilterChange }) {
 
@@ -10,3 +11,9 @@ export function Filter({ onFilterChange }) {
     )
 
 }
+
+
+Filter.propTypes = {
+    onFilterChange: PropTypes.func.isRequired,
+  
+};

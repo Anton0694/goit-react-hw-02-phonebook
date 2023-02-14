@@ -1,5 +1,6 @@
 import React from "react";
-import {ContactsList, ContactsListItem, ContactListText, Button} from './ContactList.styled'
+import { ContactsList, ContactsListItem, ContactListText, Button } from './ContactList.styled'
+import PropTypes from 'prop-types';
     
 
 export const ContactList = ({contacts, onDeleteContact}) => (
@@ -17,5 +18,8 @@ export const ContactList = ({contacts, onDeleteContact}) => (
     
 )
 
-
+ContactList.propTypes = {
+    onDeleteContact: PropTypes.func.isRequired,
+  contacts: PropTypes.string.isRequired,
+};
     
